@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<style type="text/css">
+	.page{
+    position: relative;
+    margin: auto;
+    width: 380px}
+    .picture
+    {width:380px;
+    height:380px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+    .picture2
+    {width:92.10%;
+    position: relative;}
+    .picture_cell
+    {width: 26px;
+    height: 26px;
+    color: #5e3b30;
+    text-shadow: #851927 1px -1px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;}
+    .first-out   {left: 4.4%;top: 46.65%;}
+    .second-out  {left: 16.7%;top: 16.7%;}
+    .third-out   {left: 46.65%;top: 4.4%;}
+    .fourth-out  {left: 76.46%;top: 16.55%;}
+    .fifth-out   {left: 88.7%;top: 46.6%;}
+    .sixth-out   {left: 76.5%;top: 76.5%;}
+    .seventh-out {left: 46.8%;top: 88.85%;}
+    .eighth-out  {left: 16.65%;top: 76.45%;}
+    .first-in    {left: 18.9%;top: 46.59%;}
+    .second-in   {left: 26.95%;top: 26.95%;}
+    .third-in    {left: 46.46%;top: 18.91%;}
+    .fourth-in   {left: 66.24%;top: 26.85%;}
+    .fifth-in    {left: 74.50%;top: 46.54%;}
+    .sixth-in    {left: 66.34%;top: 66.34%;}
+    .seventh-in  {left: 46.50%;top: 74.50%;}
+    .eighth-in   {left: 26.95%;top: 66.34%;}
+    .center-left {left: 43.60%;top: 46.54%;}
+    .center-right{left: 49.60%;top: 46.54%;}
+    .point-top1  {left: 13.877%;top: 44.49%;}
+    .point-down1 {left: 32.653%;top: 44.49%;}
+    .point-top2  {left: 25.51%;top: 21.85%;}
+    .point-down2 {left: 37.959%;top: 34.71%;}
+    .point-top3  {left: 50%;top: 14.285%;}
+    .point-down3 {left: 50%;top: 33.265%;}
+    .point-top4  {left: 72.05%;top: 25.51%;}
+    .point-down4 {left: 59.796%;top: 38.367%;}
+    .point-top5  {left: 79.90%;top: 49.00%;}
+    .point-top8  {left: 21.45%;top: 67.92%;}
+    .point-down8 {left: 33.90%;top: 55.33%;}
+    .age-point-beg1{left: 7.50%;top: 37.17%;color: black}
+    .age-point-mid1{left: 9.91%;top: 29.62%;color: black}
+    .age-point-fin1{left: 13.60%;top: 23.69%;color: black}
+    .age-point-beg2{left: 24.69%;top: 13.08%;color: black}
+    .age-point-mid2{left: 30.62%;top: 9.41%;color: black}
+    .age-point-fin2{left: 36.94%;top: 7.26%;color: black}
+    .age-point-beg3{left: 55.94%;top: 7.16%;color: black}
+    .age-point-mid3{left: 62.67%;top: 9.61%;color: black}
+    .age-point-fin3{left: 68.39%;top: 12.88%;color: black}
+    .age-point-beg4{left: 80%;top: 24.49%;color: black}
+    .age-point-mid4{left: 83.17%;top: 31.22%;color: black}
+    .age-point-fin4{left: 85.62%;top: 37.96%;color: black}
+    .age-point-beg5{left: 85.12%;top: 55.64%;color: black}
+    .age-point-mid5{left: 82.47%;top: 63.07%;color: black}
+    .age-point-fin5{left: 79.40%;top: 69.21%;color: black}
+    .age-point-beg6{left: 67.89%;top: 79.98%;color: black}
+    .age-point-mid6{left: 62.17%;top: 83.59%;color: black}
+    .age-point-fin6{left: 55.44%;top: 85.62%;color: black}
+    .age-point-beg7{left: 35.94%;top: 85.12%;color: black}
+    .age-point-mid7{left: 29.62%;top: 83.08%;color: black}
+    .age-point-fin7{left: 23.69%;top: 80.08%;color: black}
+    .age-point-beg8{left: 13.66%;top: 69.21%;color: black}
+    .age-point-mid8{left: 9.86%;top: 62.88%;color: black}
+    .age-point-fin8{left: 7.66%;top: 55.33%;color: black}
+    .label_cell
+    {width: 10px;
+    height: 10px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;}
+    .lfirst-out   {left: 0.25%;top: 48.163%;color: black}
+    .lsecond-out  {left: 12.42%;top: 16.45%;color: black}
+    .lthird-out   {left: 48.57%;top: 1.9%;color: black}
+    .lfourth-out  {left: 85.28%;top: 16.75%;color: black}
+    .lfifth-out   {left: 98.04%;top: 48.163%;color: black}
+    .lsixth-out   {left: 85.28%;top: 80.61%;color: black}
+    .lseventh-out {left: 48.571%;top: 95.102%;color: black}
+    .leighth-out  {left: 12.42%;top: 80.61%;color: black}
+    .lage-point-beg1{left: 2.3%;top: 38.60%;color: black}
+    .lage-point-mid1{left: 5.7%;top: 31.32%;color: black}
+    .lage-point-fin1{left: 8.5%;top: 24.69%;color: black}
+    .lage-point-beg2{left: 21.03%;top: 10.77%;color: black}
+    .lage-point-mid2{left: 27.55%;top: 7.75%;color: black}
+    .lage-point-fin2{left: 34.08%;top: 5.11%;color: black}
+    .lage-point-beg3{left: 60%;top: 4.00%;color: black}
+    .lage-point-mid3{left: 66.73%;top: 6.95%;color: black}
+    .lage-point-fin3{left: 73.47%;top: 10.22%;color: black}
+    .lage-point-beg4{left: 89.36%;top: 24.49%;color: black}
+    .lage-point-mid4{left: 92.0%;top: 31.22%;color: black}
+    .lage-point-fin4{left: 95.48%;top: 37.96%;color: black}
+    .lage-point-beg5{left: 96.30%;top: 57.53%;color: black}
+    .lage-point-mid5{left: 92.85%;top: 65.08%;color: black}
+    .lage-point-fin5{left: 90.79%;top: 71.41%;color: black}
+    .lage-point-beg6{left: 75.51%;top: 86.531%;color: black}
+    .lage-point-mid6{left: 69.796%;top: 89.60%;color: black}
+    .lage-point-fin6{left: 63.061%;top: 92.24%;color: black}
+    .lage-point-beg7{left: 32.60%;top: 91.40%;color: black}
+    .lage-point-mid7{left: 26.53%;top: 88.16%;color: black}
+    .lage-point-fin7{left: 19.49%;top: 84.49%;color: black}
+    .lage-point-beg8{left: 6.44%;top: 70.70%;color: black}
+    .lage-point-mid8{left: 4.49%;top: 64.38%;color: black}
+    .lage-point-fin8{left: 1.44%;top: 56.53%;color: black}
+
+    .border
+    {border-collapse: collapse;position: relative;margin: auto;}
+    .cell
+    {width: 78px;border: solid;border-width: 3px;border-color: #5e3b30;background-color: #e3c0a8;color: black;text-align: center;}
+    .cell1
+    {width: 26px;border: solid;border-width: 3px;border-color: #5e3b30;background-color: #e3c0a8;color: black;text-align: center;}
+    .table
+    { border: solid;border-width: 3px;border-color: #5e3b30;background-color: ;color: black; }
+    .table1
+    {width: 78px;border: solid;border-width: 3px;border-color: #5e3b30;background-color: ;color: black;text-align: center;}
+    .table2
+    {border: solid;border-width: 3px;border-color: #5e3b30;background-color: ;color: black;text-align: center;}
+
+    .form
+    {position: relative;display:flex;justify-content: center;}
+    .input
+    {width: 33%;border: outset;border-width: 3px;border-color: #5e3b30;background-color: #e3c0a8;color: black;}
+    .select
+    {width: 66%;border: outset;border-width: 3px;border-color: #5e3b30;background-color: #e3c0a8;}
+	</style>
+</head>
+<body>
+<div id="page" class="page">
+<div class="form">
+<input type="number" class="input" id="day" placeholder="день">
+<input type="number" class="input" id="month" max="12" placeholder="месяц (числом)">
+<input type="number" class="input" id="year" placeholder="год">
+</div>
+<div class="form">
+    <select class="select" id="list" size="1">
+     <option class="option" selected>выберите алгоритм</option>
+     <option class="option" value="basic">базовый</option>
+     <option class="option" value="moneyed">Денежная</option>
+     <option class="option" value="tribal">Семь колен рода</option>
+     <option class="option" value="health">Карта здоровья</option>
+     <option class="option" value="prognos">Судьба на год</option>
+   </select>
+<button class="input" onclick="collector()">вычислить</button>
+	<br>
+</div>
+</div>
+	<div id="text"></div>
+    <div id="text1"></div>
+<script type="text/javascript">
+    /*
+    ElAr-Управляющий алгоритм(PoEL|crEl|AtoEl|CoEl)
+    crEl-название тега элемента
+    PoEl-родитель элемента (Id родительского элеметна)
+    AtoEl-аттрибуты элемента и их значения (аттрибут!значение)
+    CoEl-содержимое элемента (Строка, 0-содержимого нет,stnum=>0)
+    Массивы и их назначения:
+            numAr-переменная для вычисления (Сами переменные)
+            intAr-Управляющий алгоритм (outAr|resAr|Переменные|comAr)
+        Условные обозначения структуры переменной intAr:
+            comAr-команда для вычисления (Управляющие числа)
+            resAr-имя переменной для поиска(Имя переменной или 0-записывать не надо)
+            outAr-вывод результата вычисления (Id элемента(ов) или 0-выводить не надо)
+            Управляющие числа для comAr: (все проводится с проверкой на больше 22)
+            0-только проверка
+            1-сумма чисел
+            2-табличное сложение (троичным ключом)
+            3-сложение двух массивов
+            4-сложение массивов крест-накрест
+            5-помесячная, годовая табличная рскладка*/
+            /*Main* data type: Number*/
+    basPicAr=["page|div|class!picture,id!picture|0","picture|img|class!picture2,src!https://i.ibb.co/st2x1xL/image.png|0","picture|div|class!picture_cell first-out,id!1o|stnum","picture|div|class!picture_cell second-out,id!2o|stnum","picture|div|class!picture_cell third-out,id!3o|stnum","picture|div|class!picture_cell fourth-out,id!4o|stnum","picture|div|class!picture_cell fifth-out,id!5o|stnum","picture|div|class!picture_cell sixth-out,id!6o|stnum","picture|div|class!picture_cell seventh-out,id!7o|stnum","picture|div|class!picture_cell eighth-out,id!8o|stnum","picture|div|class!picture_cell center-left,id!cl|stnum","picture|div|class!picture_cell center-right,id!cr|stnum","picture|div|class!picture_cell first-in,id!1i|stnum","picture|div|class!picture_cell second-in,id!2i|stnum","picture|div|class!picture_cell third-in,id!3i|stnum","picture|div|class!picture_cell fourth-in,id!4i|stnum","picture|div|class!picture_cell fifth-in,id!5i|stnum","picture|div|class!picture_cell sixth-in,id!6i|stnum","picture|div|class!picture_cell seventh-in,id!7i|stnum","picture|div|class!picture_cell eighth-in,id!8i|stnum","picture|div|class!picture_cell point-top3,id!pt3|stnum","picture|div|class!picture_cell point-down3,id!pd3|stnum","picture|div|class!label_cell lfirst-out|0лет","picture|div|class!label_cell lsecond-out|10лет","picture|div|class!label_cell lthird-out|20лет","picture|div|class!label_cell lfourth-out|30лет","picture|div|class!label_cell lfifth-out|40лет","picture|div|class!label_cell lsixth-out|50лет","picture|div|class!label_cell lseventh-out|60лет","picture|div|class!label_cell leighth-out|70лет","picture|div|class!label_cell lage-point-beg1|2,5лет","picture|div|class!picture_cell age-point-beg1,id!apb1|stnum","picture|div|class!label_cell lage-point-mid1|5лет","picture|div|class!picture_cell age-point-mid1,id!apm1|stnum","picture|div|class!label_cell lage-point-fin1|7,5лет","picture|div|class!picture_cell age-point-fin1,id!apf1|stnum","picture|div|class!label_cell lage-point-beg2|12,5лет","picture|div|class!picture_cell age-point-beg2,id!apb2|stnum","picture|div|class!label_cell lage-point-mid2|15лет","picture|div|class!picture_cell age-point-mid2,id!apm2|stnum","picture|div|class!label_cell lage-point-fin2|17,5лет","picture|div|class!picture_cell age-point-fin2,id!apf2|stnum","picture|div|class!label_cell lage-point-beg3|22,5лет","picture|div|class!picture_cell age-point-beg3,id!apb3|stnum","picture|div|class!label_cell lage-point-mid3|25лет","picture|div|class!picture_cell age-point-mid3,id!apm3|stnum","picture|div|class!label_cell lage-point-fin3|27,5лет","picture|div|class!picture_cell age-point-fin3,id!apf3|stnum","picture|div|class!label_cell lage-point-beg4|32,5лет","picture|div|class!picture_cell age-point-beg4,id!apb4|stnum","picture|div|class!label_cell lage-point-mid4|35лет","picture|div|class!picture_cell age-point-mid4,id!apm4|stnum","picture|div|class!label_cell lage-point-fin4|37,5лет","picture|div|class!picture_cell age-point-fin4,id!apf4|stnum","picture|div|class!label_cell lage-point-beg5|42,5лет","picture|div|class!picture_cell age-point-beg5,id!apb5|stnum","picture|div|class!label_cell lage-point-mid5|45лет","picture|div|class!picture_cell age-point-mid5,id!apm5|stnum","picture|div|class!label_cell lage-point-fin5|47,5лет","picture|div|class!picture_cell age-point-fin5,id!apf5|stnum","picture|div|class!label_cell lage-point-beg6|52,5лет","picture|div|class!picture_cell age-point-beg6,id!apb6|stnum","picture|div|class!label_cell lage-point-mid6|55лет","picture|div|class!picture_cell age-point-mid6,id!apm6|stnum","picture|div|class!label_cell lage-point-fin6|57,5лет","picture|div|class!picture_cell age-point-fin6,id!apf6|stnum","picture|div|class!label_cell lage-point-beg7|62,5лет","picture|div|class!picture_cell age-point-beg7,id!apb7|stnum","picture|div|class!label_cell lage-point-mid7|65лет","picture|div|class!picture_cell age-point-mid7,id!apm7|stnum","picture|div|class!label_cell lage-point-fin7|67,5лет","picture|div|class!picture_cell age-point-fin7,id!apf7|stnum","picture|div|class!label_cell lage-point-beg8|72,5лет","picture|div|class!picture_cell age-point-beg8,id!apb8|stnum","picture|div|class!label_cell lage-point-mid8|75лет","picture|div|class!picture_cell age-point-mid8,id!apm8|stnum","picture|div|class!label_cell lage-point-fin8|77,5лет","picture|div|class!picture_cell age-point-fin8,id!apf8|stnum"]
+    basElAr=["page|div|id!tabpage,name!basic|0","tabpage|table|id!table,class!border|0","table|tr|id!str1|0","str1|td|class!table|Личность и самооценка","str1|td|class!cell1,id!a1|0","table|tr|id!str2|0","str2|td|class!table|Детско-родительские отношения","str2|td|class!cell1,id!a2|0","table|tr|id!str3|0","str3|td|class!table|Деньги","str3|td|class!cell1,id!a3|0","table|tr|id!str4|0","str4|td|class!table|Здоровье, 40 лет","str4|td|class!cell1,id!a4|0","table|tr|id!str5|0","str5|td|class!table|Сахасрара: Связь с Богом","str5|td|class!cell1,id!a5|0","table|tr|id!str6|0","str6|td|class!table|Аджна: видение мира","str6|td|class!cell1,id!a6|0","table|tr|id!str7|0","str7|td|class!table|Вишуддха: творчество и речь","str7|td|class!cell1,id!a7|0","table|tr|id!str8|0","str8|td|class!table|Анахата: эмоции","str8|td|class!cell1,id!a8|0","table|tr|id!str9|0","str9|td|class!table|Свадхистана: партнерство","str9|td|class!cell1,id!a9|0","table|tr|id!str10|0","str10|td|class!table|Муладхара: связь с землей, страхи","str10|td|class!cell1,id!a10|0","table|tr|id!str11|0","str11|td|class!table|Род отца","str11|td|class!cell1,id!a11|0","table|tr|id!str12|0","str12|td|class!table|Род матери","str12|td|class!cell1,id!a12|0","table|tr|id!str13|0","str13|td|class!table|Род отца древние предки и генетика ","str13|td|class!cell1,id!a13|0","table|tr|id!str14|0","str14|td|class!table|Род матери древние предки и генетика","str14|td|class!cell1,id!a14|0","table|tr|id!str15|0","str15|td|class!table|Творчество рода отца","str15|td|class!cell1,id!a15|0","table|tr|id!str16|0","str16|td|class!table|Творчество рода матери","str16|td|class!cell1,id!a16|0","table|tr|id!str17|0","str17|td|class!table|Партнерство рода отца","str17|td|class!cell1,id!a17|0","table|tr|id!str18|0","str18|td|class!table|Партнерство рода матери","str18|td|class!cell1,id!a18|0","tabpage|table|id!table1,class!border|0","table1|tr|id!str1a|0","str1a|td|class!table,colspan!2|Духовный урок","table1|tr|id!str2a|0","str2a|td|class!table|Небо:","str2a|td|class!cell,id!b1|0","table1|tr|id!str3a|0","str3a|td|class!table|Земля:","str3a|td|class!cell,id!b2|0","table1|tr|id!str4a|0","str4a|td|class!table|Отец:","str4a|td|class!cell1,id!b3|0","table1|tr|id!str5a|0","str5a|td|class!table|Мать:","str5a|td|class!cell1,id!b4|0","tabpage|table|id!table2,class!border|0","table2|tr|id!str1b|0","str1b|td|class!table,colspan!2|Предназначение","table2|tr|id!str2b|0","str2b|td|class!table|Небо:","str2b|td|class!cell1,id!c1|0","table2|tr|id!str3b|0","str3b|td|class!table|Земля:","str3b|td|class!cell1,id!c2|0","table2|tr|id!str4b|0","str4b|td|class!table|Отец:","str4b|td|class!cell1,id!c3|0","table2|tr|id!str5b|0","str5b|td|class!table|Мать:","str5b|td|class!cell1,id!c4|0","table2|tr|id!str6b|0","str6b|td|class!table|Личное:","str6b|td|class!cell1,id!c5|0","table2|tr|id!str7b|0","str7b|td|class!table|Социальное:","str7b|td|class!cell1,id!c6|0","table2|tr|id!str8b|0","str8b|td|class!table|Духовное:","str8b|td|class!cell1,id!c7|0"]
+    monPicAr=["page|div|class!picture,id!picture|0","picture|img|class!picture2,src!https://i.ibb.co/R6RHqxs/22-kluchijizni.png|0","picture|div|class!picture_cell first-out,id!1o|stnum","picture|div|class!picture_cell second-out,id!2o|stnum","picture|div|class!picture_cell third-out,id!3o|stnum","picture|div|class!picture_cell fourth-out,id!4o|stnum","picture|div|class!picture_cell fifth-out,id!5o|stnum","picture|div|class!picture_cell sixth-out,id!6o|stnum","picture|div|class!picture_cell seventh-out,id!7o|stnum","picture|div|class!picture_cell eighth-out,id!8o|stnum","picture|div|class!picture_cell center-left,id!cl|stnum","picture|div|class!picture_cell center-right,id!cr|stnum","picture|div|class!picture_cell first-in,id!1i|stnum","picture|div|class!picture_cell second-in,id!2i|stnum","picture|div|class!picture_cell third-in,id!3i|stnum","picture|div|class!picture_cell fourth-in,id!4i|stnum","picture|div|class!picture_cell fifth-in,id!5i|stnum","picture|div|class!picture_cell sixth-in,id!6i|stnum","picture|div|class!picture_cell seventh-in,id!7i|stnum","picture|div|class!picture_cell eighth-in,id!8i|stnum","picture|div|class!picture_cell point-top1,id!pt1|stnum","picture|div|class!picture_cell point-top5,id!pt5|stnum"]
+    monElAr=["page|div|id!tabpage,name!moneyed|0","tabpage|table|id!table,class!border|0","table|tr|id!str1|0","str1|td|class!table|1","str1|td|class!cell,id!a1|0,0,0","str1|td|class!cell,id!b1|0,0,0","str1|td|class!cell,id!c1|0,0,0","str1|td|class!cell,id!d1|0,0,0","table|tr|id!str2|0","str2|td|class!table|2","str2|td|class!cell,id!a2|0,0,0","str2|td|class!cell,id!b2|0,0,0","str2|td|class!cell,id!c2|0,0,0","str2|td|class!cell,id!d2|0,0,0","table|tr|id!str3|0","str3|td|class!table|3","str3|td|class!cell,id!a3|0,0,0","str3|td|class!cell,id!b3|0,0,0","str3|td|class!cell,id!c3|0,0,0","str3|td|class!cell,id!d3|0,0,0","table|tr|id!str4|0","str4|td|class!table|4","str4|td|class!cell,id!a4|0,0,0","str4|td|class!cell,id!b4|0,0,0","str4|td|class!cell,id!c4|0,0,0","str4|td|class!cell,id!d4|0,0,0","table|tr|id!str5|0","str5|td|class!table|5","str5|td|class!cell,id!a5|0,0,0","str5|td|class!cell,id!b5|0,0,0","str5|td|class!cell,id!c5|0,0,0","str5|td|class!cell,id!d5|0,0,0"]
+    tribPicAr=["page|div|class!picture,id!picture|0","picture|img|class!picture2,src!https://i.ibb.co/cCwYpnH/7-kluchijizni.png|0","picture|div|class!picture_cell first-out,id!1o|stnum","picture|div|class!picture_cell second-out,id!2o|stnum","picture|div|class!picture_cell third-out,id!3o|stnum","picture|div|class!picture_cell fourth-out,id!4o|stnum","picture|div|class!picture_cell fifth-out,id!5o|stnum","picture|div|class!picture_cell sixth-out,id!6o|stnum","picture|div|class!picture_cell seventh-out,id!7o|stnum","picture|div|class!picture_cell eighth-out,id!8o|stnum","picture|div|class!picture_cell center-left,id!cl|stnum","picture|div|class!picture_cell center-right,id!cr|stnum","picture|div|class!picture_cell first-in,id!1i|stnum","picture|div|class!picture_cell second-in,id!2i|stnum","picture|div|class!picture_cell third-in,id!3i|stnum","picture|div|class!picture_cell fourth-in,id!4i|stnum","picture|div|class!picture_cell fifth-in,id!5i|stnum","picture|div|class!picture_cell sixth-in,id!6i|stnum","picture|div|class!picture_cell seventh-in,id!7i|stnum","picture|div|class!picture_cell eighth-in,id!8i|stnum","picture|div|class!picture_cell point-top1,id!pt1|stnum","picture|div|class!picture_cell point-down1,id!pd1|stnum","picture|div|class!picture_cell point-top2,id!pt2|stnum","picture|div|class!picture_cell point-down2,id!pd2|stnum","picture|div|class!picture_cell point-top3,id!pt3|stnum","picture|div|class!picture_cell point-down3,id!pd3|stnum","picture|div|class!picture_cell point-top4,id!pt4|stnum","picture|div|class!picture_cell point-down4,id!pd4|stnum","picture|div|class!picture_cell point-top8,id!pt8|stnum","picture|div|class!picture_cell point-down8,id!pd8|stnum"]
+    tribElAr=["page|div|id!tabpage,name!tribal|0","tabpage|table|id!table,class!border|0","table|tr|id!str1|0","str1|td|class!table|0","str1|td|class!table1|Род отца","str1|td|class!table1|Род матери","str1|td|class!table1|Примирение родов","str1|td|class!table1|Духовный урок","table|tr|id!str2|0","str2|td|class!table|1","str2|td|class!cell,id!a1|0,0,0","str2|td|class!cell,id!b1|0,0,0","str2|td|class!cell,id!c1|0,0,0","str2|td|class!cell,id!d1|0,0,0","table|tr|id!str3|0","str3|td|class!table|2","str3|td|class!cell,id!a2|0,0,0","str3|td|class!cell,id!b2|0,0,0","str3|td|class!cell,id!c2|0,0,0","str3|td|class!cell,id!d2|0,0,0","table|tr|id!str4|0","str4|td|class!table|3","str4|td|class!cell,id!a3|0,0,0","str4|td|class!cell,id!b3|0,0,0","str4|td|class!cell,id!c3|0,0,0","str4|td|class!cell,id!d3|0,0,0","table|tr|id!str5|0","str5|td|class!table|4","str5|td|class!cell,id!a4|0,0,0","str5|td|class!cell,id!b4|0,0,0","str5|td|class!cell,id!c4|0,0,0","str5|td|class!cell,id!d4|0,0,0","table|tr|id!str6|0","str6|td|class!table|5","str6|td|class!cell,id!a5|0,0,0","str6|td|class!cell,id!b5|0,0,0","str6|td|class!cell,id!c5|0,0,0","str6|td|class!cell,id!d5|0,0,0","table|tr|id!str7|0","str7|td|class!table|6","str7|td|class!cell,id!a6|0,0,0","str7|td|class!cell,id!b6|0,0,0","str7|td|class!cell,id!c6|0,0,0","str7|td|class!cell,id!d6|0,0,0","table|tr|id!str8|0","str8|td|class!table|7","str8|td|class!cell,id!a7|0,0,0","str8|td|class!cell,id!b7|0,0,0","str8|td|class!cell,id!c7|0,0,0","str8|td|class!cell,id!d7|0,0,0","tabpage|br|0|0","tabpage|table|class!border,id!father|0","father|td|colspan!4,class!table2|Род отца","father|tr|id!fstr1|0","fstr1|td|class!table1|Колено рода","fstr1|td|class!table1|Небо","fstr1|td|class!table1|Земля","fstr1|td|class!table1|Целостный ключ","father|tr|id!fstr2|0","fstr2|td|class!table|1","fstr2|td|class!cell,id!fta1|0,0,0","fstr2|td|class!cell,id!ftb1|0,0,0","fstr2|td|class!cell,id!ftc1|0,0,0","father|tr|id!fstr3|0","fstr3|td|class!table|2","fstr3|td|class!cell,id!fta2|0,0,0","fstr3|td|class!cell,id!ftb2|0,0,0","fstr3|td|class!cell,id!ftc2|0,0,0","father|tr|id!fstr4|0","fstr4|td|class!table|3","fstr4|td|class!cell,id!fta3|0,0,0","fstr4|td|class!cell,id!ftb3|0,0,0","fstr4|td|class!cell,id!ftc3|0,0,0","father|tr|id!fstr5|0","fstr5|td|class!table|4","fstr5|td|class!cell,id!fta4|0,0,0","fstr5|td|class!cell,id!ftb4|0,0,0","fstr5|td|class!cell,id!ftc4|0,0,0","father|tr|id!fstr6|0","fstr6|td|class!table|5","fstr6|td|class!cell,id!fta5|0,0,0","fstr6|td|class!cell,id!ftb5|0,0,0","fstr6|td|class!cell,id!ftc5|0,0,0","father|tr|id!fstr7|0","fstr7|td|class!table|6","fstr7|td|class!cell,id!fta6|0,0,0","fstr7|td|class!cell,id!ftb6|0,0,0","fstr7|td|class!cell,id!ftc6|0,0,0","father|tr|id!fstr8|0","fstr8|td|class!table|7","fstr8|td|class!cell,id!fta7|0,0,0","fstr8|td|class!cell,id!ftb7|0,0,0","fstr8|td|class!cell,id!ftc7|0,0,0","tabpage|br|0|0","tabpage|table|class!border,id!mother|0","mother|td|colspan!4,class!table2|Род матери","mother|tr|id!mstr1|0","mstr1|td|class!table1|Колено рода","mstr1|td|class!table1|Небо","mstr1|td|class!table1|Земля","mstr1|td|class!table1|Целостный ключ","mother|tr|id!mstr2|0","mstr2|td|class!table|1","mstr2|td|class!cell,id!mta1|0,0,0","mstr2|td|class!cell,id!mtb1|0,0,0","mstr2|td|class!cell,id!mtc1|0,0,0","mother|tr|id!mstr3|0","mstr3|td|class!table|2","mstr3|td|class!cell,id!mta2|0,0,0","mstr3|td|class!cell,id!mtb2|0,0,0","mstr3|td|class!cell,id!mtc2|0,0,0","mother|tr|id!mstr4|0","mstr4|td|class!table|3","mstr4|td|class!cell,id!mta3|0,0,0","mstr4|td|class!cell,id!mtb3|0,0,0","mstr4|td|class!cell,id!mtc3|0,0,0","mother|tr|id!mstr5|0","mstr5|td|class!table|4","mstr5|td|class!cell,id!mta4|0,0,0","mstr5|td|class!cell,id!mtb4|0,0,0","mstr5|td|class!cell,id!mtc4|0,0,0","mother|tr|id!mstr6|0","mstr6|td|class!table|5","mstr6|td|class!cell,id!mta5|0,0,0","mstr6|td|class!cell,id!mtb5|0,0,0","mstr6|td|class!cell,id!mtc5|0,0,0","mother|tr|id!mstr7|0","mstr7|td|class!table|6","mstr7|td|class!cell,id!mta6|0,0,0","mstr7|td|class!cell,id!mtb6|0,0,0","mstr7|td|class!cell,id!mtc6|0,0,0","mother|tr|id!mstr8|0","mstr8|td|class!table|7","mstr8|td|class!cell,id!mta7|0,0,0","mstr8|td|class!cell,id!mtb7|0,0,0","mstr8|td|class!cell,id!mtc7|0,0,0"];
+    healPicAr=["page|div|class!picture,id!picture|0","picture|img|class!picture2,src!https://i.ibb.co/d2qY0KC/22.png|0","picture|div|class!picture_cell first-out,id!1o|stnum","picture|div|class!picture_cell second-out,id!2o|stnum","picture|div|class!picture_cell third-out,id!3o|stnum","picture|div|class!picture_cell fourth-out,id!4o|stnum","picture|div|class!picture_cell fifth-out,id!5o|stnum","picture|div|class!picture_cell sixth-out,id!6o|stnum","picture|div|class!picture_cell seventh-out,id!7o|stnum","picture|div|class!picture_cell eighth-out,id!8o|stnum","picture|div|class!picture_cell center-left,id!cl|stnum","picture|div|class!picture_cell center-right,id!cr|stnum","picture|div|class!picture_cell first-in,id!1i|stnum","picture|div|class!picture_cell second-in,id!2i|stnum","picture|div|class!picture_cell third-in,id!3i|stnum","picture|div|class!picture_cell fourth-in,id!4i|stnum","picture|div|class!picture_cell fifth-in,id!5i|stnum","picture|div|class!picture_cell sixth-in,id!6i|stnum","picture|div|class!picture_cell seventh-in,id!7i|stnum","picture|div|class!picture_cell eighth-in,id!8i|stnum","picture|div|class!picture_cell point-top3,id!pt3|stnum","picture|div|class!picture_cell point-down3,id!pd3|stnum","picture|div|class!picture_cell point-top1,id!pt1|stnum","picture|div|class!picture_cell point-down1,id!pd1|stnum"]
+    healElAr=["page|div|id!tabpage,name!health|0","tabpage|table|id!table,class!border|0","table|tr|id!str1|0","str1|td|class!table|Чакра","str1|td|class!table|Небо","str1|td|class!table|Земля","str1|td|class!table|Ключ","table|tr|id!str2|0","str2|td|class!table|Сахасрара","str2|td|class!cell1,id!a1|0","str2|td|class!cell1,id!b1|0","str2|td|class!cell,id!c1|0","table|tr|id!str3|0","str3|td|class!table|Аджна","str3|td|class!cell1,id!a2|0","str3|td|class!cell1,id!b2|0","str3|td|class!cell,id!c2|0","table|tr|id!str4|0","str4|td|class!table|Вишуддха","str4|td|class!cell1,id!a3|0","str4|td|class!cell1,id!b3|0","str4|td|class!cell,id!c3|0","table|tr|id!str5|0","str5|td|class!table|Анахата","str5|td|class!cell1,id!a4|0","str5|td|class!cell1,id!b4|0","str5|td|class!cell,id!c4|0","table|tr|id!str6|0","str6|td|class!table|Манипура","str6|td|class!cell1,id!a5|0","str6|td|class!cell1,id!b5|0","str6|td|class!cell,id!c5|0","table|tr|id!str7|0","str7|td|class!table|Свадхистана","str7|td|class!cell1,id!a6|0","str7|td|class!cell1,id!b6|0","str7|td|class!cell,id!c6|0","table|tr|id!str8|0","str8|td|class!table|Муладхара","str8|td|class!cell1,id!a7|0","str8|td|class!cell1,id!b7|0","str8|td|class!cell,id!c7|0","table|tr|id!str9|0","str9|td|class!table|Всего","str9|td|class!cell1,id!a8|0","str9|td|class!cell1,id!b8|0","str9|td|class!cell,id!c8|0"]
+    progPicAr=["page|div|class!picture,id!picture|0","picture|h1|style!position:relative,id!label|0"]
+    progElAr=["picture|div|id!tabpage,name!prognos|0","tabpage|table|id!table,class!border|0",
+    "table|tr|id!str1|0","str1|td|class!cell1,style!background-color:white,id!m1|0","str1|td|class!cell1,style!background-color:white,id!v1|0","table|tr|id!str2|0","str2|td|class!cell1,id!m2|0","str2|td|class!cell1,id!v2|0","table|tr|id!str3|0","str3|td|class!cell1,id!m3|0","str3|td|class!cell1,id!v3|0","table|tr|id!str4|0","str4|td|class!cell1,id!m4|0","str4|td|class!cell1,id!v4|0","table|tr|id!str5|0","str5|td|class!cell1,id!m5|0","str5|td|class!cell1,id!v5|0","table|tr|id!str6|0","str6|td|class!cell1,id!m6|0","str6|td|class!cell1,id!v6|0","table|tr|id!str7|0","str7|td|class!cell1,id!m7|0","str7|td|class!cell1,id!v7|0","table|tr|id!str8|0","str8|td|class!cell1,id!m8|0","str8|td|class!cell1,id!v8|0","table|tr|id!str9|0","str9|td|class!cell1,id!m9|0","str9|td|class!cell1,id!v9|0","table|tr|id!str10|0","str10|td|class!cell1,id!m10|0","str10|td|class!cell1,id!v10|0","table|tr|id!str11|0","str11|td|class!cell1,id!m11|0","str11|td|class!cell1,id!v11|0","table|tr|id!str12|0","str12|td|class!cell1,id!m12|0","str12|td|class!cell1,id!v12|0","table|tr|id!str13|0","str13|td|class!cell1,id!m13|0","str13|td|class!cell1,id!v13|0"]
+
+        tribAr=["1o|1o|1o|0","3o|3o|3o|0","5o|5o|5o|0","7o|7o|1o,3o,5o|1","2o|2o|1o,3o|1","4o|4o|3o,5o|1","6o|6o|5o,7o|1","8o|8o|1o,7o|1","cl|cl|1o,3o,5o,7o|1","cr|cr|2o,4o,6o,8o|1","1i|1i|1o,cl|1","3i|3i|3o,cl|1","5i|5i|5o,cl|1","7i|7i|7o,cl|1","2i|2i|2o,cr|1","4i|4i|4o,cr|1","6i|6i|6o,cr|1","8i|8i|8o,cr|1","pt1|pt1|1o,1i|1","pt2|pt2|2o,2i|1","pt3|pt3|3o,3i|1","pt4|pt4|4o,4i|1","pt8|pt8|8o,8i|1","pd1|pd1|1i,cl|1","pd2|pd2|2i,cr|1","pd3|pd3|3i,cl|1","pd4|pd4|4i,cr|1","pd8|pd8|8i,cr|1","fta1|fta1|3o,2o|2","ftb1|ftb1|1o,2o|2","ftc1,a1|fk1|fta1,ftb1|3","fta2|fta2|pt3,pt2|2","ftb2|ftb2|pt1,pt2|2","ftc2,a2|fk2|fta2,ftb2|3","fta3|fta3|3i,2i|2","ftb3|ftb3|1i,2i|2","ftc3,a3|fk3|fta3,ftb3|3","fta4|fta4|pd3,pd2|2","ftb4|ftb4|pd1,pd2|2","ftc4,a4|fk4|fta4,ftb4|3","fta6|fta6|7i,6i|2","ftb6|ftb6|5i,6i|2","ftc6,a6|fk6|fta6,ftb6|3","fta7|fta7|7o,6o|2","ftb7|ftb7|5o,6o|2","ftc7,a7|fk7|fta7,ftb7|3","mta1|mta1|3o,4o|2","mtb1|mtb1|1o,8o|2","mtc1,b1|mk1|mta1,mtb1|3","mta2|mta2|pt3,pt4|2","mtb2|mtb2|pt1,pt8|2","mtc2,b2|mk2|mta2,mtb2|3","mta3|mta3|3i,4i|2","mtb3|mtb3|1i,8i|2","mtc3,b3|mk3|mta3,mtb3|3","mta4|mta4|pd3,pd4|2","mtb4|mtb4|pd1,pd8|2","mtc4,b4|mk4|mta4,mtb4|3","mta6|mta6|7i,8i|2","mtb6|mtb6|5i,4i|2","mtc6,b6|mk6|mta6,mtb6|3","mta7|mta7|7o,8o|2","mtb7|mtb7|5o,4o|2","mtc7,b7|mk7|mta7,mtb7|3","fta5,ftb5,mta5,mtb5|pts5|cl,cr|2","mtc5,ftc5,a5,b5|pk5|pts5,pts5|3","c1|stk1|fk1,mk1|3","c2|stk2|fk2,mk2|3","c3|stk3|fk3,mk3|3","c4|stk4|fk4,mk4|3","c6|stk6|fk6,mk6|3","c7|stk7|fk7,mk7|3","c5|stk5|pk5,pk5|3","d1|sll1|fk1,mk1,stk1|4","d2|sll2|fk2,mk2,stk2|4","d3|sll3|fk3,mk3,stk3|4","d4|sll4|fk4,mk4,stk4|4","d6|sll6|fk6,mk6,stk6|4","d7|sll7|fk7,mk7,stk7|4","d5|sll5|pk5,pk5,stk5|4"]
+    basAr=["a1,1o|1o|1o|0","a5,3o|3o|3o|0","a4,5o|5o|5o|0","a10,7o|7o|1o,3o,5o|1","a11,2o|2o|1o,3o|1","a12,4o|4o|3o,5o|1","a13,6o|6o|5o,7o|1","a14,8o|8o|1o,7o|1","cl|cl|1o,3o,5o,7o|1","cr|cr|2o,4o,6o,8o|1","a2,1i|1i|1o,cl|1","a7,3i|3i|3o,cl|1","a3,5i|5i|5o,cl|1","a9,7i|7i|7o,cl|1","a15,2i|2i|2o,cr|1","a16,4i|4i|4o,cr|1","a17,6i|6i|6o,cr|1","a18,8i|8i|8o,cr|1","a6,pt3|pt3|3o,3i|1","a8,pd3|pd3|3i,cl|1","apm1|apm1|1o,2o|1","apb1|apb1|1o,apm1|1","apf1|apf1|2o,apm1|1","apm2|apm2|2o,3o|1","apb2|apb2|2o,apm2|1","apf2|apf2|3o,apm2|1","apm3|apm3|3o,4o|1","apb3|apb3|3o,apm3|1","apf3|apf3|4o,apm3|1","apm4|apm4|4o,5o|1","apb4|apb4|4o,apm4|1","apf4|apf4|5o,apm4|1","apm5|apm5|5o,6o|1","apb5|apb5|5o,apm5|1","apf5|apf5|6o,apm5|1","apm6|apm6|6o,7o|1","apb6|apb6|6o,apm6|1","apf6|apf6|7o,apm6|1","apm7|apm7|7o,8o|1","apb7|apb7|7o,apm7|1","apf7|apf7|8o,apm7|1","apm8|apm8|8o,1o|1","apb8|apb8|8o,apm8|1","apf8|apf8|1o,apm8|1","0|sko|3o,7o|2","0|slo|3o,7o|1","0|ski|3i,7i|2","0|sli|3i,7i|1","0|skr|sko,ski|3","c1|slt|slo,sli|1","b1|skt|sko,ski,skr|4","0|eko|1o,5o|2","0|elo|1o,5o|1","0|eki|1i,5i|2","0|eli|1i,5i|1","0|ekr|eko,eki|3","c2|elt|elo,eli|1","b2|ekt|eko,eki,ekr|4","0|fko|2o,6o|2","0|flo|2o,6o|1","0|fki|2i,6i|2","0|fli|2i,6i|1","0|fkr|fko,fki|3","c3|flt|flo,fli|1","b3|fkt|fko,fki,fkr|4","0|mko|4o,8o|2","0|mlo|4o,8o|1","0|mki|4i,8i|2","0|mli|4i,8i|1","0|mkr|mko,mki|3","c4|mlt|mlo,mli|1","b4|mkt|mko,mki,mkr|4","c5|plt|slt,elt|1","c6|sct|flt,mlt|1","c7|sllt|plt,sct|1"];
+    monAr=["1o|1o|1o|0","3o|3o|3o|0","5o|5o|5o|0","7o|7o|1o,3o,5o|1","2o|2o|1o,3o|1","4o|4o|3o,5o|1","6o|6o|5o,7o|1","8o|8o|1o,7o|1","cl|cl|1o,3o,5o,7o|1","cr|cr|2o,4o,6o,8o|1","1i|1i|1o,cl|1","3i|3i|3o,cl|1","5i|5i|5o,cl|1","7i|7i|7o,cl|1","2i|2i|2o,cr|1","4i|4i|4o,cr|1","6i|6i|6o,cr|1","8i|8i|8o,cr|1","pt1|pt1|1o,1i|1","pt5|pt5|5o,5i|1","a1|sta1|3i,7i|2","b1|stb1|7i,3i|2","c1|stc1|sta1,stb1|3","d1|std1|sta1,stb1,stc1|4","0|sa1a2|3i,4i|1","0|sa2a2|7i,6i|1","a2|sta2|sa1a2,sa2a2|2","0|sa1b2|7i,8i|1","0|sa2b2|3i,2i|1","b2|stb2|sa1b2,sa2b2|2","c2|stc2|sta2,stb2|3","d2|std2|sta2,stb2,stc2|4","a3|sta3|4i,6i|2","b3|stb3|8i,2i|2","c3|stc3|sta3,stb3|3","d3|std3|sta3,stb3,stc3|4","0|sa1a4|4i,5i|1","0|sa2a4|5i,6i|1","a4|sta4|sa1a4,sa2a4|2","0|sa1b4|8i,1i|1","0|sa2b4|1i,2i|1","b4|stb4|sa1b4,sa2b4|2","c4|stc4|sta4,stb4|3","d4|std4|sta4,stb4,stc4|4","a5|sta5|5i,pt5|2","b5|stb5|1i,pt1|2","c5|stc5|sta5,stb5|3","d5|std5|sta5,stb5,stc5|4"]
+    healAr=["b1,1o|1o|1o|0","a1,3o|3o|3o|0","b7,5o|5o|5o|0","a7,7o|7o|1o,3o,5o|1","2o|2o|1o,3o|1","4o|4o|3o,5o|1","6o|6o|5o,7o|1","8o|8o|1o,7o|1","a5,b5,cl|cl|1o,3o,5o,7o|1","cr|cr|2o,4o,6o,8o|1","b3,1i|1i|1o,cl|1","a3,3i|3i|3o,cl|1","b6,5i|5i|5o,cl|1","a6,7i|7i|7o,cl|1","2i|2i|2o,cr|1","4i|4i|4o,cr|1","6i|6i|6o,cr|1","8i|8i|8o,cr|1","a2,pt3|pt3|3o,3i|1","a4,pd3|pd3|3i,cl|1","b2,pt1|pt1|1o,1i|1","b4,pd1|pd1|1i,cl|1","a8|a8|3o,pt3,3i,pd3,cl,7i,7o|1","b8|b8|1o,pt1,1i,pd1,cl,5i,5o|1","c1|c1|3o,1o|2","c2|c2|pt3,pt1|2","c3|c3|3i,1i|2","c4|c4|pd3,pd1|2","c5|c5|cl,cl|2","c6|c6|7i,5i|2","c7|c7|7o,5o|2","c8|c8|a8,b8|2"]
+    progAr=["0|1o|1o|0","0|3o|3o|0","0|5o|5o|0","0|7o|1o,3o,5o|1","0|2o|1o,3o|1","0|4o|3o,5o|1","0|6o|5o,7o|1","0|8o|1o,7o|1","0|apm1|1o,2o|1","0|apb1|1o,apm1|1","0|apf1|2o,apm1|1","0|apm2|2o,3o|1","0|apb2|2o,apm2|1","0|apf2|3o,apm2|1","0|apm3|3o,4o|1","0|apb3|3o,apm3|1","0|apf3|4o,apm3|1","0|apm4|4o,5o|1","0|apb4|4o,apm4|1","0|apf4|5o,apm4|1","0|apm5|5o,6o|1","0|apb5|5o,apm5|1","0|apf5|6o,apm5|1","0|apm6|6o,7o|1","0|apb6|6o,apm6|1","0|apf6|7o,apm6|1","0|apm7|7o,8o|1","0|apb7|7o,apm7|1","0|apf7|8o,apm7|1","0|apm8|8o,1o|1","0|apb8|8o,apm8|1","0|apf8|1o,apm8|1","0|1p1|1o,apb1|1","0|1p2|apb1,apm1|1","0|1p3|apm1,apf1|1","0|1p4|2o,apf1|1","0|2p1|2o,apb2|1","0|2p2|apb2,apm2|1","0|2p3|apm2,apf2|1","0|2p4|3o,apf2|1","0|3p1|3o,apb3|1","0|3p2|apb3,apm3|1","0|3p3|apm3,apf3|1","0|3p4|4o,apf3|1","0|4p1|4o,apb4|1","0|4p2|apb4,apm4|1","0|4p3|apm4,apf4|1","0|4p4|5o,apf4|1","0|5p1|5o,apb5|1","0|5p2|apb5,apm5|1","0|5p3|apm5,apf5|1","0|5p4|6o,apf5|1","0|6p1|6o,apb6|1","0|6p2|apb6,apm6|1","0|6p3|apm6,apf6|1","0|6p4|7o,apf6|1","0|7p1|7o,apb7|1","0|7p2|apb7,apm7|1","0|7p3|apm7,apf7|1","0|7p4|8o,apf7|1","0|8p1|8o,apb8|1","0|8p2|apb8,apm8|1","0|8p3|apm8,apf8|1","0|8p4|1o,apf8|1","0|0||5"]
+
+    actscript=[basAr,monAr,tribAr,healAr,progAr];
+    actpage=[[basPicAr,basElAr],[monPicAr,monElAr],[tribPicAr,tribElAr],[healPicAr,healElAr],[progPicAr,progElAr]];
+    nametab=["basic","moneyed","tribal","health","prognos"];
+    date=new Date();
+    now_date=new Map();
+    now_date.set("day",date.getDate());
+    now_date.set("month",date.getMonth());
+    now_date.set("year",date.getFullYear());
+        function collector(){
+            parAr= new Map();
+            resAr=[];
+            outAr=[];
+                aac0=parseInt(document.getElementById("day").value);
+                aac1=parseInt(document.getElementById("month").value);
+                aac2=parseInt(document.getElementById("year").value);
+                parAr.set("1o",aac0);
+                parAr.set("3o",aac1);
+                parAr.set("5o",aac2);
+            select = document.getElementById("list");
+            checktab=nametab.indexOf(select.value);
+            DOMa=document.getElementById("tabpage");
+            if (checktab!=-1){
+                tabPage();
+                calculator(actscript[checktab]);
+            };
+            if (checktab==-1){alert("Что будем считать?")};
+        
+           }
+        function tabPage(){
+                prev=(DOMa!=null)?DOMa.getAttribute("name"):0;
+                if (prev!=nametab[checktab]&&DOMa==null) {Ar=actpage[checktab];dot()} else {element=document.querySelector('#tabpage');element.remove();pic=document.querySelector('#picture');pic.remove();Ar=actpage[checktab];dot()}     
+           }
+        function dot() {
+           for (el in Ar){ ElAr=Ar[el];
+            for (tag in ElAr){
+                InoEl=ElAr[tag].split("|");
+                parent=document.querySelector("#"+InoEl[0]);
+                element=document.createElement(InoEl[1]);
+                attributes=InoEl[2].split(",");
+                count=InoEl[3];
+                if (attributes!=0){for (attr in attributes){RAtoEl=attributes[attr].split("!");element.setAttribute(RAtoEl[0],RAtoEl[1])}}
+                if (el==0){if (tag==0){parent.prepend(element)}else{parent.append(element);}}else{parent.append(element);}
+            if(count!=0){output=(count==="stnum")?0:count;element.innerHTML=output;}
+            }}}
+        function calculator(intAr){
+                for (tag in intAr) {
+                    answer=0;
+                    AlAr=intAr[tag].split("|");
+                    outAr[tag]=AlAr[0];
+                    resAr[tag]=AlAr[1]
+                    funAr=AlAr[2];
+                    comAr=AlAr[3];
+                        PDs=funAr.split(",");
+                        PfCalc=[];
+                        for (key in PDs){PfCalc[key]=parAr.get(PDs[key]);}
+                    if (comAr==0){num=PfCalc[0];out=(num<=22)?num:more_than_n();answer=out;}
+                    if (comAr==1){
+                        num=adder(PfCalc);pop=more_than_n();
+                        set1=(num>22)?pop:num;
+                        answer=set1;
+                    }
+                    if (comAr==2){
+                        num=adder(PfCalc);pop=more_than_n();
+                        set1=(num>22)?pop:num;
+                        answer=[PfCalc[0],PfCalc[1],set1];
+                    }
+                    if (comAr==3){
+                        answer=[];
+                        for (tan in PfCalc[0]){
+                            ton=[PfCalc[0][tan],PfCalc[1][tan]];
+                            num=adder(ton);pop=more_than_n();
+                            answer[tan]=(num>22)?pop:num;
+                        }
+                    }
+                    if (comAr==4){
+                        answer=[];
+                        PTtD=[PfCalc[0][1],PfCalc[2][1]];
+                        PLtR=[PfCalc[1][0],PfCalc[1][2]];
+                        CLtR=[PfCalc[0][0],PfCalc[2][2]];
+                        CRtL=[PfCalc[0][2],PfCalc[2][0]];
+                        Ar=[PTtD,PLtR,CLtR,CRtL];
+                        AAr=[];
+                        for (ton in Ar) {
+                            num=adder(Ar[ton]);pop=more_than_n();
+                            AAr[ton]=(num>22)?pop:num;}
+                        MCalc=[[AAr[0],AAr[1]],[AAr[2],AAr[3]]];
+                        FCalc=[];
+                        for (pon in MCalc){
+                            num=adder(MCalc[pon]);pop=more_than_n();
+                            FCalc[pon]=(num>22)?pop:num;}
+                        num=adder(FCalc);pop=more_than_n();
+                        set1=(num>22)?pop:num;
+                        answer=[FCalc[0],FCalc[1],set1];
+                    }
+                    if (comAr==5){
+                        label="no,np1,apbn,np2,apmn,np3,apfn,np4,lo";
+
+                        day=now_date.get("day")>=aac0;
+                        month=(now_date.get("month")==(aac1-1))?day:(now_date.get("month")>(aac1-1))?true:false;
+                        year=now_date.get("year")-aac2;
+
+                        custom_year=((month)?0:-1)+year;
+                        age=prompt("Прогноз с какого возраста вас интересует?(введите число)","0");
+                        input=parseInt((age=="0")?custom_year:age);
+                        section=parseInt(input/10)+1;
+                        final=((section+1)>8)?1:(section+1);
+                        abscell=parseInt((input%10)/1.25);
+                        border=(abscell+1)*1.25;
+                        decide1=border-(input%10);
+                        finish=[];
+                        finish[0]=abscell+((decide1<1)?2:1);
+                        finish[1]=(abscell<6)?section:final;
+                        Num_Of_start_Border=pointer(abscell,section);
+                        Num_Of_final_Border=pointer(finish[0],finish[1]);
+                        label1=label.replaceAll("n",section);
+                        mark=(label1.replaceAll("l",final)).split(",");
+
+                        arc=model_by_year(Num_Of_start_Border,Num_Of_final_Border,mark);
+                    }
+                    parAr.set(AlAr[1],answer)
+                    if(parAr.size==outAr.length){for(tan in outAr){if(outAr[tan]!=0){
+                        PfI=outAr[tan].split(",");
+                        for (pan in PfI){document.getElementById(PfI[pan]).innerHTML=parAr.get(resAr[tan])}}}}
+            }
+        }       
+            function more_than_n() {
+/*in Number*/   act0=num.toString();
+/*out Number*/  actr=(Number.isInteger(num))?act0:num;
+/*25=>2+5=>7*/  ardigit=actr.split('');
+                math=[];
+                for (var i = 0; i < ardigit.length; i++) {math[i]=parseInt(ardigit[i])}
+                sum=math.reduce((sum, current) => sum + current, 0);
+                if(sum>22){num=sum; more_than_n()};
+                if (sum<=22){return sum};}
+            
+            function adder(num){
+/*in Array*/    math=[];
+/*out Number*/  for (var i = 0; i < num.length; i++) {math[i]=parseInt(num[i])}
+/*[2,4]=>6*/    let sum= math.reduce((sum,current)=>sum+current,0);
+                return sum
+            }
+            function mouth(val){
+                 month=["январь","февраль","март","апрель","май","июнь","июль","август","сентябрь","октябрь","ноябрь","декабрь"];
+                return month[val]
+            }
+            function pointer(val,branch){
+                result=0;
+                if(Number.isInteger(val/2)){
+                    if(val==0||val==8){result=branch+"o"}
+                    else{
+                        letter=val/2;
+                        result=((letter==1)?"apb":(letter==2)?"apm":"apf")+branch;
+                    }
+                }
+                else{
+                    NumOP=parseInt(val/2)+1;
+                    result=branch+"p"+NumOP;
+                    }
+                return result
+                }
+            function model_by_year(start,final,branch_view){
+                first=branch_view.indexOf(start);
+                last=branch_view.indexOf(final);
+                target_age=input%10;
+                first_age=first*1.25;
+                support_age=(((first+1)==last)?last:(first+1))*1.25;
+                length=last-first;
+                calc_array=[];
+                calc_array[0]=parAr.get(start);
+                calc_array[15*length]=parAr.get(final);
+                if (length==2){calc_array[15]=parAr.get(branch_view[first+1])}
+                first_month=0;
+                if ((target_age-first_age)!=0){first_month=15-((support_age-target_age)*12)};
+                indexer(calc_array);
+                for (var i = 0; i<13; i++) {
+                    month=mouth((aac1-1+i)%12);
+                    value=calc_array[i+first_month];
+                    document.getElementById("m"+(i+1)).innerHTML=month;
+                    document.getElementById("v"+(i+1)).innerHTML=value;
+                }
+            }
+            function counter(array,not_null_index,r=0){
+            while (array.length!=not_null_index.length){
+                support=(r+1>=not_null_index.length-1)?0:(not_null_index[(r+1)%not_null_index.length]);
+                middle_index=parseInt((not_null_index[r]+not_null_index[r+1])/2);
+                if (!not_null_index.includes(middle_index)){
+                      num=array[not_null_index[r]]+array[not_null_index[r+1]];
+                      array[middle_index]=(num>22)?more_than_n():num;
+                      not_null_index.push(middle_index);
+                      not_null_index.sort(function (a,b) {return a-b})}
+                r=(not_null_index.indexOf(support)<not_null_index.length || not_null_index.indexOf(support)!=-1)?(not_null_index.indexOf(support)):0;}
+            }
+            function indexer(array){
+            if (array.length>16){
+            not_null_index=[0,15,30];
+            counter(array,not_null_index);
+            }else{
+              not_null_index=[0,15];
+              counter(array,not_null_index);
+            }
+              return array;
+              }
+</script>
+</body>
+</html>

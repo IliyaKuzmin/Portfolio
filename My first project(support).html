@@ -1,0 +1,384 @@
+<html>
+<head>
+<meta charset="utf-8">
+	<style type="text/css">
+	.page{
+    position: relative;
+    margin: auto;
+    max-width: 400px;
+    width: 100%;
+}
+    .picture
+    {margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+    .picture2
+    {width:92.10%;
+    position: absolute;}
+    .picture_cell
+    {width: 6.842%;
+    height: 6.842%;
+    font-size: 90%;
+    color: #5e3b30;
+    text-shadow: #851927 1px -1px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;}
+    .first-out   {left: 4.30%;top: 46.45%;}
+    .second-out  {left: 16.7%;top: 16.7%;}
+    .third-out   {left: 46.65%;top: 4.4%;}
+    .fourth-out  {left: 76.46%;top: 16.55%;}
+    .fifth-out   {left: 88.8%;top: 46.55%;}
+    .sixth-out   {left: 76.5%;top: 76.5%;}
+    .seventh-out {left: 46.8%;top: 88.85%;}
+    .eighth-out  {left: 16.65%;top: 76.45%;}
+    .first-in    {left: 18.9%;top: 46.59%;}
+    .second-in   {left: 26.95%;top: 26.95%;}
+    .third-in    {left: 46.46%;top: 18.91%;}
+    .fourth-in   {left: 66.24%;top: 26.85%;}
+    .fifth-in    {left: 74.50%;top: 46.54%;}
+    .sixth-in    {left: 66.34%;top: 66.34%;}
+    .seventh-in  {left: 46.50%;top: 74.50%;}
+    .eighth-in   {left: 26.95%;top: 66.34%;}
+    .center-left {left: 43.90%;top: 46.54%;}
+    .center-right{left: 49.60%;top: 46.54%;}
+    .point-top1  {left: 13.877%;top: 44.49%;}
+    .point-down1 {left: 32.653%;top: 44.49%;}
+    .point-top2  {left: 25.51%;top: 21.85%;}
+    .point-down2 {left: 37.959%;top: 34.71%;}
+    .point-top3  {left: 50%;top: 14.285%;}
+    .point-down3 {left: 50%;top: 33.265%;}
+    .point-top4  {left: 72.05%;top: 25.51%;}
+    .point-down4 {left: 59.796%;top: 38.367%;}
+    .point-top5  {left: 79.90%;top: 49.00%;}
+    .point-top8  {left: 21.45%;top: 67.92%;}
+    .point-down8 {left: 33.90%;top: 55.33%;}
+    .age-point-beg1{left: 7.50%;top: 37.17%;color: black}
+    .age-point-mid1{left: 9.91%;top: 29.62%;color: black}
+    .age-point-fin1{left: 13.60%;top: 23.69%;color: black}
+    .age-point-beg2{left: 24.69%;top: 13.08%;color: black}
+    .age-point-mid2{left: 30.62%;top: 9.41%;color: black}
+    .age-point-fin2{left: 36.94%;top: 7.26%;color: black}
+    .age-point-beg3{left: 55.94%;top: 7.16%;color: black}
+    .age-point-mid3{left: 62.67%;top: 9.61%;color: black}
+    .age-point-fin3{left: 68.39%;top: 12.88%;color: black}
+    .age-point-beg4{left: 80%;top: 24.49%;color: black}
+    .age-point-mid4{left: 83.17%;top: 31.22%;color: black}
+    .age-point-fin4{left: 85.62%;top: 37.96%;color: black}
+    .age-point-beg5{left: 85.12%;top: 55.64%;color: black}
+    .age-point-mid5{left: 82.47%;top: 63.07%;color: black}
+    .age-point-fin5{left: 79.40%;top: 69.21%;color: black}
+    .age-point-beg6{left: 67.89%;top: 79.98%;color: black}
+    .age-point-mid6{left: 62.17%;top: 83.59%;color: black}
+    .age-point-fin6{left: 55.44%;top: 85.62%;color: black}
+    .age-point-beg7{left: 35.94%;top: 85.12%;color: black}
+    .age-point-mid7{left: 29.62%;top: 83.08%;color: black}
+    .age-point-fin7{left: 23.69%;top: 80.08%;color: black}
+    .age-point-beg8{left: 13.66%;top: 69.21%;color: black}
+    .age-point-mid8{left: 9.86%;top: 62.88%;color: black}
+    .age-point-fin8{left: 7.66%;top: 55.33%;color: black}
+    .label_cell
+    {width: 2.631%;
+    height: 2.631%;
+    font-size: 66%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;}
+    .lfirst-out   {left: 0.25%;top: 48.163%;color: black}
+    .lsecond-out  {left: 12.42%;top: 16.45%;color: black}
+    .lthird-out   {left: 48.57%;top: 1.9%;color: black}
+    .lfourth-out  {left: 85.28%;top: 16.75%;color: black}
+    .lfifth-out   {left: 98.04%;top: 48.163%;color: black}
+    .lsixth-out   {left: 85.28%;top: 80.61%;color: black}
+    .lseventh-out {left: 48.571%;top: 95.102%;color: black}
+    .leighth-out  {left: 12.42%;top: 80.61%;color: black}
+    .lage-point-beg1{left: 2.3%;top: 38.60%;color: black}
+    .lage-point-mid1{left: 5.7%;top: 31.32%;color: black}
+    .lage-point-fin1{left: 8.5%;top: 24.69%;color: black}
+    .lage-point-beg2{left: 21.03%;top: 10.77%;color: black}
+    .lage-point-mid2{left: 27.55%;top: 7.75%;color: black}
+    .lage-point-fin2{left: 34.08%;top: 5.11%;color: black}
+    .lage-point-beg3{left: 60%;top: 4.00%;color: black}
+    .lage-point-mid3{left: 66.73%;top: 6.95%;color: black}
+    .lage-point-fin3{left: 73.47%;top: 10.22%;color: black}
+    .lage-point-beg4{left: 89.36%;top: 24.49%;color: black}
+    .lage-point-mid4{left: 92.0%;top: 31.22%;color: black}
+    .lage-point-fin4{left: 95.48%;top: 37.96%;color: black}
+    .lage-point-beg5{left: 96.30%;top: 57.53%;color: black}
+    .lage-point-mid5{left: 92.85%;top: 65.08%;color: black}
+    .lage-point-fin5{left: 90.79%;top: 71.41%;color: black}
+    .lage-point-beg6{left: 75.51%;top: 86.531%;color: black}
+    .lage-point-mid6{left: 69.796%;top: 89.60%;color: black}
+    .lage-point-fin6{left: 63.061%;top: 92.24%;color: black}
+    .lage-point-beg7{left: 32.60%;top: 91.40%;color: black}
+    .lage-point-mid7{left: 26.53%;top: 88.16%;color: black}
+    .lage-point-fin7{left: 19.49%;top: 84.49%;color: black}
+    .lage-point-beg8{left: 6.44%;top: 70.70%;color: black}
+    .lage-point-mid8{left: 4.49%;top: 64.38%;color: black}
+    .lage-point-fin8{left: 1.44%;top: 56.53%;color: black}
+
+    .border
+    {border-collapse: collapse;position: relative;margin: auto;}
+    .cell1
+    {width: 26px;border: solid;border-width: 3px;border-color: #5e3b30;background-color: #e3c0a8;color: black;text-align: center;}
+    .cell
+    {width: 78px;border: solid;border-width: 3px;border-color: #5e3b30;background-color: #e3c0a8;color: black;text-align: center;}
+    .table
+    {border: solid;border-width: 3px; height: 26px;font-size: 100%;border-color: #5e3b30;background-color: ;color: black; }
+    .form
+    {position: relative;display: flex; justify-content: center;}
+    .input
+    {border: outset;border-width: 3px;border-color: #5e3b30;background-color: #e3c0a8;color: black;}
+    .button{border: outset;border-width: 3px;border-color: #5e3b30;background-color: #e3c0a8;color: black;}
+	</style>
+</head>
+<body>
+	<div id="page" class="page">
+	<div class="picture" id="picture">
+        
+        <img class="picture2" src="Pictures/Matrix base.png">
+        <div class="picture_cell point-top3" id="pt3">0</div>
+        <div class="picture_cell point-down3" id="pd3">0</div>
+
+        <div class="picture_cell first-out" id="1o">0</div>
+        <div class="picture_cell second-out" id="2o">0</div>
+        <div class="picture_cell third-out" id="3o">0</div>
+        <div class="picture_cell fourth-out" id="4o">0</div>
+        <div class="picture_cell fifth-out" id="5o">0</div>
+        <div class="picture_cell sixth-out" id="6o">0</div>
+        <div class="picture_cell seventh-out" id="7o">0</div>
+        <div class="picture_cell eighth-out" id="8o">0</div>
+        <div class="picture_cell first-in" id="1i">0</div>
+        <div class="picture_cell second-in" id="2i">0</div>
+        <div class="picture_cell third-in" id="3i">0</div>
+        <div class="picture_cell fourth-in" id="4i">0</div>
+        <div class="picture_cell fifth-in" id="5i">0</div>
+        <div class="picture_cell sixth-in" id="6i">0</div>
+        <div class="picture_cell seventh-in" id="7i">0</div>
+        <div class="picture_cell eighth-in" id="8i">0</div>
+        <div class="picture_cell center-left" id="cl">0</div>
+        <div class="picture_cell center-right" id="cr">0</div>
+        <div class="picture_cell age-point-beg1" id="apb1">0</div>
+        <div class="picture_cell age-point-mid1" id="apm1">0</div>
+        <div class="picture_cell age-point-fin1" id="apf1">0</div>
+        <div class="picture_cell age-point-beg2" id="apb2">0</div>
+        <div class="picture_cell age-point-mid2" id="apm2">0</div>
+        <div class="picture_cell age-point-fin2" id="apf2">0</div>
+        <div class="picture_cell age-point-beg3" id="apb3">0</div>
+        <div class="picture_cell age-point-mid3" id="apm3">0</div>
+        <div class="picture_cell age-point-fin3" id="apf3">0</div>
+        <div class="picture_cell age-point-beg4" id="apb4">0</div>
+        <div class="picture_cell age-point-mid4" id="apm4">0</div>
+        <div class="picture_cell age-point-fin4" id="apf4">0</div>
+        <div class="picture_cell age-point-beg5" id="apb5">0</div>
+        <div class="picture_cell age-point-mid5" id="apm5">0</div>
+        <div class="picture_cell age-point-fin5" id="apf5">0</div>
+        <div class="picture_cell age-point-beg6" id="apb6">0</div>
+        <div class="picture_cell age-point-mid6" id="apm6">0</div>
+        <div class="picture_cell age-point-fin6" id="apf6">0</div>
+        <div class="picture_cell age-point-beg7" id="apb7">0</div>
+        <div class="picture_cell age-point-mid7" id="apm7">0</div>
+        <div class="picture_cell age-point-fin7" id="apf7">0</div>
+        <div class="picture_cell age-point-beg8" id="apb8">0</div>
+        <div class="picture_cell age-point-mid8" id="apm8">0</div>
+        <div class="picture_cell age-point-fin8" id="apf8">0</div>
+
+        <div class="label_cell lfirst-out">0лет</div>
+        <div class="label_cell lsecond-out">10лет</div>
+        <div class="label_cell lthird-out">20лет</div>
+        <div class="label_cell lfourth-out">30лет</div>
+        <div class="label_cell lfifth-out">40лет</div>
+        <div class="label_cell lsixth-out">50лет</div>
+        <div class="label_cell lseventh-out">60лет</div>
+        <div class="label_cell leighth-out">70лет</div>
+        <div class="label_cell lage-point-beg1">2,5лет</div>
+        <div class="label_cell lage-point-mid1">5лет</div>
+        <div class="label_cell lage-point-fin1">7,5лет</div>
+        <div class="label_cell lage-point-beg2">12,5лет</div>
+        <div class="label_cell lage-point-mid2">15лет</div>
+        <div class="label_cell lage-point-fin2">17,5лет</div>
+        <div class="label_cell lage-point-beg3">22,5лет</div>
+        <div class="label_cell lage-point-mid3">25лет</div>
+        <div class="label_cell lage-point-fin3">27,5лет</div>
+        <div class="label_cell lage-point-beg4">32,5лет</div>
+        <div class="label_cell lage-point-mid4">35лет</div>
+        <div class="label_cell lage-point-fin4">37,5лет</div>
+        <div class="label_cell lage-point-beg5">42,5лет</div>
+        <div class="label_cell lage-point-mid5">45лет</div>
+        <div class="label_cell lage-point-fin5">47,5лет</div>
+        <div class="label_cell lage-point-beg6">52,5лет</div>
+        <div class="label_cell lage-point-mid6">55лет</div>
+        <div class="label_cell lage-point-fin6">57,5лет</div>
+        <div class="label_cell lage-point-beg7">62,5лет</div>
+        <div class="label_cell lage-point-mid7">65лет</div>
+        <div class="label_cell lage-point-fin7">67,5лет</div>
+        <div class="label_cell lage-point-beg8">72,5лет</div>
+        <div class="label_cell lage-point-mid8">75лет</div>
+        <div class="label_cell lage-point-fin8">77,5лет</div>
+</div>
+<div id="test1"></div>
+<div id="test2"></div>
+<div id="test3"></div>
+<div class="form">
+<input type="number" class="input" id="day" placeholder="день">
+<input type="number" class="input" id="month" max="12" placeholder="месяц (числом)">
+<input type="number" class="input" id="year" placeholder="год"></div>
+<div class="form">
+<button class="button" id="button" onclick="start()">вычислить</button></div> 
+<br>
+<table class="border">
+	<tr><td class="table">Личность и самооценка</td><td class="cell1" id="a1"></td></tr>
+    <tr><td class="table">Детско-родительские отношения</td><td class="cell1" id="a2"></td></tr>
+    <tr><td class="table">Деньги</td><td class="cell1" id="a3"></td></tr>
+    <tr><td class="table">Здоровье, 40 лет</td><td class="cell1" id="a4"></td></tr>
+    <tr><td class="table">Сахасрара: Связь с Богом</td><td class="cell1" id="a5"></td></tr>
+    <tr><td class="table">Аджна: видение мира</td><td class="cell1" id="a6"></td></tr>
+    <tr><td class="table">Вишуддха: творчество и речь</td><td class="cell1" id="a7"></td></tr>
+    <tr><td class="table">Анахата: эмоции</td><td class="cell1" id="a8"></td></tr>
+    <tr><td class="table">Свадхистана: партнерство</td><td class="cell1" id="a9"></td></tr>
+    <tr><td class="table">Муладхара: связь с землей, страхи</td><td class="cell1" id="a10"></td></tr>
+    <tr><td class="table">Род отца</td><td class="cell1" id="a11"></td></tr>
+    <tr><td class="table">Род матери</td><td class="cell1" id="a12"></td></tr>
+    <tr><td class="table">Род отца древние предки и генетика</td><td class="cell1" id="a13"></td></tr>
+    <tr><td class="table">Род матери древние предки и генетика</td><td class="cell1" id="a14"></td></tr>
+    <tr><td class="table">Творчество рода отца</td><td class="cell1" id="a15"></td></tr>
+    <tr><td class="table">Творчество рода матери</td><td class="cell1" id="a16"></td></tr>
+    <tr><td class="table">Партнерство рода отца</td><td class="cell1" id="a17"></td></tr>
+    <tr><td class="table">Партнерство рода матери</td><td class="cell1" id="a18"></td></tr>
+</table>
+<table class="border">
+    <tr><td class="table" colspan="2">Духовный урок</td></tr>
+    <tr><td class="table">Небо:</td><td class="cell" id="b1"></td></tr>
+    <tr><td class="table">Земля:</td><td class="cell" id="b2"></td></tr>
+    <tr><td class="table">Отец:</td><td class="cell" id="b3"></td></tr>
+    <tr><td class="table">Мать:</td><td class="cell" id="b4"></td></tr>
+</table>
+<table class="border">
+    <tr><td class="table" colspan="2">Предназначение</td></tr>
+    <tr><td class="table">Небо:</td><td class="cell1" id="c1">0</td></tr>
+    <tr><td class="table">Земля:</td><td class="cell1" id="c2">0</td></tr>
+    <tr><td class="table">Отец:</td><td class="cell1" id="c3">0</td></tr>
+    <tr><td class="table">Мать:</td><td class="cell1" id="c4">0</td></tr>
+    <tr><td class="table">Личное:</td><td class="cell1" id="c5">0</td></tr>
+    <tr><td class="table">Социальное:</td><td class="cell1" id="c6">0</td></tr>
+    <tr><td class="table">Духовное:</td><td class="cell1" id="c7">0</td></tr>
+</table>
+</div>
+		<script type="text/javascript">
+            widths=document.getElementById("page").offsetWidth;
+            input=document.getElementsByClassName("input");
+            button.style.width=widths;
+            obj=0;
+            while (obj in input){
+            if(obj==input.length){break}
+            document.getElementById(input[obj].id).style.width=widths/3;
+        	++obj}
+            picture.style.width=widths;
+            picture.style.height=widths;
+			/*Массивы и их назначения:
+			numAr-переменная для вычисления (Сами переменные)
+			intAr-Управляющий алгоритм (outAr|resAr|Переменные|comAr)
+		  Условные обозначения структуры переменной intAr:
+			comAr-команда для вычисления (Управляющие числа)
+			resAr-имя переменной для поиска(Имя переменной или 0-записывать не надо)
+			outAr-вывод результата вычисления (Id элемента(ов) или 0-выводить не надо)
+			Управляющие числа для comAr: (все проводится с проверкой на больше 22)
+			0-только проверка
+			1-сумма чисел
+			2-табличное сложение (троичным ключом)
+			3-сложение двух массивов
+			4-сложение массивов крест-накрест*/
+			/*Main* data type: Number*/
+			itAr=["a1,1o|1o|1o|0","a5,3o|3o|3o|0","a4,5o|5o|5o|0","a10,7o|7o|1o,3o,5o|1","a11,2o|2o|1o,3o|1","a12,4o|4o|3o,5o|1","a13,6o|6o|5o,7o|1","a14,8o|8o|1o,7o|1","cl|cl|1o,3o,5o,7o|1","cr|cr|2o,4o,6o,8o|1","a2,1i|1i|1o,cl|1","a7,3i|3i|3o,cl|1","a3,5i|5i|5o,cl|1","a9,7i|7i|7o,cl|1","a15,2i|2i|2o,cr|1","a16,4i|4i|4o,cr|1","a17,6i|6i|6o,cr|1","a18,8i|8i|8o,cr|1","a6,pt3|pt3|3o,3i|1","a8,pd3|pd3|3i,cl|1","apm1|apm1|1o,2o|1","apb1|apb1|1o,apm1|1","apf1|apf1|2o,apm1|1","apm2|apm2|2o,3o|1","apb2|apb2|2o,apm2|1","apf2|apf2|3o,apm2|1","apm3|apm3|3o,4o|1","apb3|apb3|3o,apm3|1","apf3|apf3|4o,apm3|1","apm4|apm4|4o,5o|1","apb4|apb4|4o,apm4|1","apf4|apf4|5o,apm4|1","apm5|apm5|5o,6o|1","apb5|apb5|5o,apm5|1","apf5|apf5|6o,apm5|1","apm6|apm6|6o,7o|1","apb6|apb6|6o,apm6|1","apf6|apf6|7o,apm6|1","apm7|apm7|7o,8o|1","apb7|apb7|7o,apm7|1","apf7|apf7|8o,apm7|1","apm8|apm8|8o,1o|1","apb8|apb8|8o,apm8|1","apf8|apf8|1o,apm8|1","0|sko|3o,7o|2","0|slo|3o,7o|1","0|ski|3i,7i|2","0|sli|3i,7i|1","0|skr|sko,ski|3","c1|slt|slo,sli|1","b1|skt|sko,ski,skr|4","0|eko|1o,5o|2","0|elo|1o,5o|1","0|eki|1i,5i|2","0|eli|1i,5i|1","0|ekr|eko,eki|3","c2|elt|elo,eli|1","b2|ekt|eko,eki,ekr|4","0|fko|2o,6o|2","0|flo|2o,6o|1","0|fki|2i,6i|2","0|fli|2i,6i|1","0|fkr|fko,fki|3","c3|flt|flo,fli|1","b3|fkt|fko,fki,fkr|4","0|mko|4o,8o|2","0|mlo|4o,8o|1","0|mki|4i,8i|2","0|mli|4i,8i|1","0|mkr|mko,mki|3","c4|mlt|mlo,mli|1","b4|mkt|mko,mki,mkr|4","c5|plt|slt,elt|1","c6|sct|flt,mlt|1","c7|sllt|plt,sct|1"]
+			 /*;*/
+			 
+/*Main*/	function start(){
+			parAr= new Map();
+			resAr=[];
+			outAr=[];
+				aac0=parseInt(document.getElementById("day").value);
+				aac1=parseInt(document.getElementById("month").value);
+				aac2=parseInt(document.getElementById("year").value);
+				parAr.set("1o",aac0);
+				parAr.set("3o",aac1);
+				parAr.set("5o",aac2);
+				calculator(itAr)
+		}
+			function calculator(intAr){
+                for (tag in intAr) {
+                	answer=0;
+                    AlAr=intAr[tag].split("|");
+                    outAr[tag]=AlAr[0];
+                    resAr[tag]=AlAr[1]
+                    funAr=AlAr[2];
+                    comAr=AlAr[3];
+                        PDs=funAr.split(",");
+                        PfCalc=[];
+                        for (key in PDs){PfCalc[key]=parAr.get(PDs[key]);}
+                    if (comAr==0){num=PfCalc[0];out=(num<=22)?num:more_than_n();answer=out;}
+                    if (comAr==1){
+                        num=adder(PfCalc);pop=more_than_n();
+                        set1=(num>22)?pop:num;
+                        answer=set1;
+                    }
+                    if (comAr==2){
+                        num=adder(PfCalc);pop=more_than_n();
+                        set1=(num>22)?pop:num;
+                        answer=[PfCalc[0],PfCalc[1],set1];
+                    }
+                    if (comAr==3){
+                        answer=[];
+                        for (tan in PfCalc[0]){
+                            ton=[PfCalc[0][tan],PfCalc[1][tan]];
+                            num=adder(ton);pop=more_than_n();
+                            answer[tan]=(num>22)?pop:num;
+                        }
+                    }
+                    if (comAr==4){
+                        answer=[];
+                        PTtD=[PfCalc[0][1],PfCalc[2][1]];
+                        PLtR=[PfCalc[1][0],PfCalc[1][2]];
+                        CLtR=[PfCalc[0][0],PfCalc[2][2]];
+                        CRtL=[PfCalc[0][2],PfCalc[2][0]];
+                        Ar=[PTtD,PLtR,CLtR,CRtL];
+                        AAr=[];
+                        for (ton in Ar) {
+                            num=adder(Ar[ton]);pop=more_than_n();
+                            AAr[ton]=(num>22)?pop:num;}
+                        MCalc=[[AAr[0],AAr[1]],[AAr[2],AAr[3]]];
+                        FCalc=[];
+                        for (pon in MCalc){
+                            num=adder(MCalc[pon]);pop=more_than_n();
+                            FCalc[pon]=(num>22)?pop:num;}
+                        num=adder(FCalc);pop=more_than_n();
+                        set1=(num>22)?pop:num;
+                        answer=[FCalc[0],FCalc[1],set1];
+                    }
+                    parAr.set(AlAr[1],answer)
+                    if(parAr.size==outAr.length){for(tan in outAr){if(outAr[tan]!=0){
+                        PfI=outAr[tan].split(",");
+                        for (pan in PfI){document.getElementById(PfI[pan]).innerHTML=parAr.get(resAr[tan])}}}}
+            }
+        }       
+            function more_than_n() {
+/*in Number*/   actr=(Number.isInteger(num))?num.toString():num;
+/*out Number*/ 	ardigit=actr.split('');
+/*25=>2+5=>7*/  math=[];
+                for (var i = 0; i < ardigit.length; i++) {math[i]=parseInt(ardigit[i])}
+                sum=math.reduce((sum, current) => sum + current, 0);
+                if(sum>22){num=sum; more_than_n()};
+                if (sum<=22){return sum};}
+            
+            function adder(num){
+/*in Array*/    math=[];
+/*out Number*/  for (var i = 0; i < num.length; i++) {math[i]=parseInt(num[i])}
+/*[2,4]=>6*/    let sum= math.reduce((sum,current)=>sum+current,0);
+                return sum
+            }
+		</script>
+	</body>
+</html>

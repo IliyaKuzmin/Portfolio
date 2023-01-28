@@ -1,0 +1,5 @@
+This assembly of files is the history of my development as a developer:
+All files inserted into the site builder, in which there is no possibility to upload files to the server, therefore have a monolithic organization (CSS|HTML|JS in one file)
+My first project.html - the very first code collected for the site.
+Multifunction calculator for matrix 22 arcans.html - a transitional moment, a change in the architecture of the program executed in the calculator: script => engine
+My first project(support).html is the latest version of the code after a year of practicing CSS and JS.
